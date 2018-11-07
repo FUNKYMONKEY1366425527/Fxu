@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.box1 {
+				width: 1040px;
+				height: 80px;				
+				position: relative;
+			}
+			.box1-1 {
+				width: 200px;
+				height: 40px;
+				background-color: antiquewhite;
+				position: absolute;}
+		.box1-2 {
+				width: 530px;
+				height: 30px;
+				position: absolute;top: 28px;left: 300px;
+				border: 1px solid black;
+				-webkit-border-radius: 20px;
+				background-color: aliceblue;
+				
+			
+			
+			}
+			.box1-3{
+				width: 32px;
+				height: 32px;
+				position: absolute;top: 26px;left: 900px;
+				background-image: url(img/123.png);
+				background-position: 55px -55px;
+				background-repeat: no-repeat;
+				}
+				.box1-4{
+				width: 32px;
+				height: 32px;
+				position: absolute;top: 26px;left: 950px;
+				background-image: url(img/123.png);
+				background-position: 55px -55px;
+				background-repeat: no-repeat;
+				}
+			img {
+				position: absolute;
+				top: 20px;
+				
+			}
+			</style>
+			<style type="text/css">
+				
+		 ul{/*设置导航栏的框框*/
+		 	margin: 10px 10px;/*框框整体的位置，30px是指离网页的顶部和下部的距离，auto控制的是左右距离为自动调节*/
+			width: 992px;/*框框的宽度*/
+			height: 50px;/*框框的长度*/
+			padding: 0px;/*将框框的padding设置为零，不然会导致框框里的内容与框边缘有间隔*/
+			border:1px solid #000;/*添加边框*/
+		}
+		li{
+			list-style-type: none;/* 去掉li前的点 */
+			float: left;/*将li设置成做浮动，变为联动*/
+		}
+		a{
+			display: block;/*将a变成块状*/
+			width: 62px;/*设置块的宽度*/
+			height: 50px;/*设置块的长度*/
+			font-family: Microsoft Yahei;
+			line-height: 50px;/*设置字体在块中的高度*/
+			background-color:#1479d7;
+			margin: 0px 0px;/*块里的高宽通过margin设置*/
+			color: #fff;
+			text-align: center;/*字体居中*/
+			text-decoration: none;/*去掉下划线*/
+			font-size: 15px;
+		}
+		a:hover{
+			background-color: #2f6f4f;
+		}
+		.box1-5 {
+				width: 600px;
+				height: 80px;
+				position: absolute;top: 150px;left: 10px;
+				}
+		.box1-6 {
+				width: 300px;
+				height: 80px;
+				position: absolute;top: 150px;left: 700px;
+				}
+		.box2{width: 200px;
+				height: 50px;
+				position: absolute;top: 233px;left: 12px;
+				border: solid 0px 0px 3px 0px blueviolet;
+				}
+		.box2-1{width: 50px;
+				height: 27px;
+				position: absolute;top: 20px;left: 10px;
+				border-top:0px;
+				border-left: 0px;
+				border-right: 0px;
+				border-bottom: 3px solid #1479d7;
+				}
+		.box2-2{width: 220px;
+				height: 29px;
+				position: absolute;top: 20px;left: 60px;
+				border-top:0px;
+				border-left: 0px;
+				border-right: 0px;
+				border-bottom: 1px solid #cae0f3;
+				}
+		
+		.box3{width: 70px;
+				height: 47px;
+				position: absolute;top: 233px;left: 300px;
+				border-top:0px;
+				border-left: 0px;
+				border-right: 0px;
+				border-bottom: 3px solid #1479d7;
+				}
+		.box3-1{width: 100px;
+				height: 26px;
+				position: absolute;top: 20px;left: 3px;
+				}
+				.box0{width: 300px;
+				height: 27px;
+				position: absolute;top: 254px;left: 370px;
+				border-top:0px;
+				border-left: 0px;
+				border-right: 0px;
+				border-bottom: 1px solid #cae0f3;}
+		.box4{width: 270px;
+			  height: 500px;
+			  position: absolute;top: 290px;left: 20px;	}
+		.box5{width: 360px;height: 500px;
+		position: absolute;top:290px;left: 300px;
+		}
+		.box6{width: 300px;height: 25px;
+		position: absolute;top: 500px; left: 10px;
+		}	
+		.box7{width: 300px;height: 100px;
+		position: absolute;top: -40px;left: 400px;
+		border: solid 1px #cae0f3;}
+		.box7-1{width: 300px;height: 25px;
+		border: solid 1px #cae0f3;
+		position: absolute;top: 0px;left: 0px;}
+		
+		.box7-2{width: 300px;height: 25px;
+		border: solid 1px #cae0f3;
+		position: absolute;top: 25px;left: 0px;}
+		
+		.box7-3{width: 300px;height: 25px;
+		border: solid 1px #cae0f3;
+		position: absolute;top: 50px;left: 0px;}
+		
+		.box7-4{width: 300px;height: 25px;
+		border: solid 1px #cae0f3;
+		position: absolute;top: 75px;left: 0px;}
+		
+		.box8{width: 200px;
+				height: 50px;
+				position: absolute;top: 150px;left: 200px;
+				border: solid 0px 0px 3px 0px blueviolet;
+				}
+		.box8-1{width: 100px;
+				height: 27px;
+				position: absolute;top: -60px;left: 200px;
+				border-top:0px;
+				border-left: 0px;
+				border-right: 0px;
+				border-bottom: 3px solid #1479d7;
+				}
+		.box8-2{width: 180px;
+				height: 29px;
+				position: absolute;top: -60px;left: 320px;
+				border-top:0px;
+				border-left: 0px;
+				border-right: 0px;
+				border-bottom: 1px solid #cae0f3;
+				}
+		.box8-3{width: 300px;
+				height: 480px;
+				position: absolute;top: -5px;left: 200px;
+				border-top:0px;
+				border-left: 0px;
+				border-right: 0px;
+				}
+		
+		
+		
+		
+		
+		
+		
+		.box1-2 input{border: none;background-color:aliceblue;
+		line-height: 25px;}
+		.box1-2 button{height: 31px;line-height: 31px;position: absolute;top:0px;left: 460px;background: none;
+		color: aliceblue;background-color: #1479D7;border-radius: 20px;}
+				
+				
+		</style>
+		<script language=javascript>
+			function hero() {
+				var herowidth = 1065; //改为你要的网页宽度
+				var heroheight = 881; //改为你要的网页高度
+				window.resizeTo(herowidth, heroheight);
+			}
+
+			hero();
+		</script>
+
+	</head>
+
+             <body>
+		
+	
+             	
+			<div class="box1">
+				<div class=".box1-1"><img src="img/1.png" /style="position: absolute;top: 25px;left: 50px;"></div>			
+				<div class="box1-2"><input type="text"  placeholder="请输入要搜索的内容"  style="width: 400px;height: 20px;position:relative;top: 1px;left: 30px;"><input type="button" onClick="location.href='https://www.sogou.com/?hdq=sogou-wsse-3f7bcd0b3ea82268'"style="position:absolute;top: 1px;left: 440px;">
+				
+				<button onclick="http://www.sogou.com/">搜狗搜索</button>
+				</div>	
+				<div class="box1-3"><img src="img/icons_2x1.png"/alt="bottom image" width="30px"height="30px"style="position: absolute;top: -3px;"></div>
+				<div class="box1-4"><img src="img/999.png"/ alt="bottom image" width="30px"height="30px"style="position: absolute;top: -3px;"></div>
+			</div>
+				<div >
+		<ul class=daohang>
+			<li><a href="http://www.qq.com/">新闻</a></li>
+			<li><a href="http://www.qq.com/">视频</a></li>
+			<li><a href="http://www.qq.com/">图片</a></li>
+			<li><a href="http://www.qq.com/">军事</a></li>
+			<li><a href="http://www.qq.com/">体育</a></li>
+			<li><a href="http://www.qq.com/">NBA</a></li>
+			<li><a href="http://www.qq.com/">娱乐</a></li>
+			<li><a href="http://www.qq.com/">财经</a></li>
+			<li><a href="http://www.qq.com/">科技</a></li>
+			<li><a href="http://www.qq.com/">时尚</a></li>
+			<li><a href="http://www.qq.com/">汽车</a></li>
+			<li><a href="http://www.qq.com/">房产</a></li><li><a href="">首页</a></li>
+			<li><a href="http://www.qq.com/">教育</a></li>
+			<li><a href="http://www.qq.com/">文化</a></li>
+			<li><a href="http://www.qq.com/">星座</a></li>
+		
+			
+		</ul></div>
+		<div class="box1-5"><img src="img/7.png"></div>
+		<div class="box1-6"><img src="img/8.png"></div>
+		<div class="box2">
+		<div class="box2-1"><font color="#1479d7">要闻</font></div>
+		<div class="box2-2">| &nbsp;&nbsp;&nbsp;湖南新闻</div>
+		</div>
+		<div class="box3">
+		<div class="box3-1"><font color="#1479d7">今日话题</font></div></div>
+		<div class="box0"></div>
+		<div class="box4"align="left"><h5>中国妇女十二大开幕 习近平等到会祝贺 </h5>
+			<p><font size="2">习近平就印尼狮航客机失事向印尼总统佐科致慰问电 <br><br>
+马克思主义大众化的先驱 <br><br>
+各主宾国：进博会有利世界经济 国家馆今天完成搭建工作 <br><br>
+25省份公布前三季经济成绩单 多数省份完成增长目标无悬念 <br><br>
+他“身价”千万，每天穿70斤衣服与死神博弈 <br><br>
+浙江前三季度减轻企业负担1180亿元 <br><br>
+厉害了，半边天！这些数字了解一下！<br><br></font> </p>
+<img src="img/110.jpg" style="width: 150px;height: 80px; position: absolute;top: 380px;left: 0px;">
+<p style="position: absolute;top: 380px;left: 150px;">
+<font size="2">武侠小说泰斗金庸逝世 享年94岁</font> </p><br><br><br>
+<p><font size="2">
+农业农村部：严厉打击私屠滥宰 做好非洲猪瘟防控<br><br>
+美指责中国在拉美从事掠夺性经济活动 外交部回应<br><br>
+金庸溘然长逝！生前专访：我没有忘记外面的世界<br><br></font>
+</p>
+		</div>
+		<div class="box5" align="left"><h5>设立“月经假”，究竟是保护还是伤害？ </h5>
+		<p style="color: #0c82ff;"><font size="2">新京报评论    &nbsp; &nbsp;| <font size="2"color="#000000">&nbsp; &nbsp; 高铁上“父亲猥亵女儿” 公众警觉一点不过分</font> </font></p>
+		<h5>设立“月经假”，究竟是保护还是伤害？ </h5>
+		<p style="color: #0c82ff;"><font size="2">湘大大家    &nbsp; &nbsp;| <font size="2"color="#000000">&nbsp; &nbsp;  退出政坛，金庸让世间多了一个伟大的作家 </font> </font></p><h5>设立“月经假”，究竟是保护还是伤害？ </h5>
+		<p style="color: #0c82ff;"><font size="2">财看见    &nbsp; &nbsp;| <font size="2"color="#000000">&nbsp; &nbsp; 两天市值蒸发1000亿！ 图解茅台是如何“飞天”的</font> </font></p><h5>设立“月经假”，究竟是保护还是伤害？ </h5>
+		<p style="color: #0c82ff;"><font size="2">深网   &nbsp; &nbsp;| <font size="2"color="#000000">&nbsp; &nbsp; 互联网电视：一个热门风口如何从喧嚣走向衰退 </font> </font></p><h5>设立“月经假”，究竟是保护还是伤害？ </h5>
+		<p style="color: #0c82ff;"><font size="2">一枚石头  &nbsp; &nbsp;| <font size="2"color="#000000">&nbsp; &nbsp;  二战英军对德“千机大轰炸”，催生导航系统 </font> </font></p><h5>设立“月经假”，究竟是保护还是伤害？ </h5>
+		<p style="color: #0c82ff;"><font size="2">锵锵行天下    &nbsp; &nbsp;| <font size="2"color="#000000">&nbsp; &nbsp;  秒懂柏拉图！原来哲学就是这么简单 </font> </font></p>
+		<div class="box6"><img src="img/1314.png"style="position:absolute;top: 0px;"><br>
+		<p style="color: #0c82ff;"><font size="2">超级演说家    &nbsp; &nbsp;| <font size="2"color="#000000">&nbsp; &nbsp;   刘晓庆霸气回应：说我又整形就是夸我 </font> </font></p>
+		<p style="color: #0c82ff;"><font size="2">巅锋问答    &nbsp; &nbsp;| <font size="2"color="#000000">&nbsp; &nbsp; 李亚鹏当年有多牛？93年给唐朝拉赞助赚4万 </font> </font></p>
+		</div>
+		<div class="box7">
+			<div class="box7-1"><font size="1"></font><h6 style="position: absolute;top: -20px;left: 5px;">新闻APP&nbsp;&nbsp;体育APP&nbsp;&nbsp;企鹅号&nbsp;&nbsp;快报&nbsp;&nbsp;视频&nbsp;&nbsp;浏览器&nbsp;&nbsp;&nbsp;微视
+</h6>
+			<img src="img/121.png"style="position: absolute;top: -1px;left: 280px;width: 20px;height: 30px;">
+			</div>
+<div class="box7-2"><font size="1"></font><h6 style="position: absolute;top: -20px;left: 5px;">微信&nbsp;&nbsp;&nbsp;QQ&nbsp;&nbsp;&nbsp;空间&nbsp;&nbsp;&nbsp;企业&nbsp;&nbsp;&nbsp;微信邮箱&nbsp;&nbsp;&nbsp;腾讯云&nbsp;&nbsp;&nbsp;电脑管家
+</h6>
+			<img src="img/124.png"style="position: absolute;top: -2px;left: 280px;width: 20px;height: 30px;">
+</div>
+<div class="box7-3"><font size="1"></font><h6 style="position: absolute;top: -20px;left: 5px;">LOL&nbsp;&nbsp;&nbsp;DNF&nbsp;&nbsp;&nbsp;CF&nbsp;&nbsp;&nbsp;王者&nbsp;&nbsp;&nbsp;&nbsp;逆战&nbsp;&nbsp;&nbsp;&nbsp;火影OL&nbsp;&nbsp;&nbsp;天刀&nbsp;&nbsp;&nbsp;&nbsp;爱玩
+</h6>
+			<img src="img/125.png"style="position: absolute;top: -4px;left: 280px;width: 20px;height: 30px;">
+</div>
+<div class="box7-4"><font size="1"></font><h6 style="position: absolute;top: -20px;left: 5px;">软件&nbsp;&nbsp;Q币&nbsp;&nbsp;京东&nbsp;&nbsp;&nbsp;腾讯地图&nbsp;&nbsp;&nbsp;腾讯文档&nbsp;&nbsp;&nbsp;理财通&nbsp;&nbsp;&nbsp;全部
+</h6>
+			<img src="img/122.png"style="position: absolute;top: -3px;left: 280px;width: 20px;height: 30px;">
+</div>
+			<div class="box7-2"></div>
+			<div class="box7-3"></div>
+			<div class="box7-4"></div>
+		</div>	
+			
+			<div class="box8">
+		<div class="box8-1"><font color="#1479d7"size="4">热门赛事</font></div>
+		<div class="box8-2"><font size="2"> &nbsp;&nbsp;&nbsp;10月31日 &nbsp; &nbsp;|&nbsp; &nbsp; 各位下午好>.<</font></div>
+		<div class="box8-3"><img src="img/G2.png" style="position: absolute;top: -17px;"></div>
+		<div class="box8-8">
+		<img src="img/RW.png" style="position: absolute;top: 145px;left: 205px;"></div>
+			</div>
+			
+			
+		
+		</body>
+
+</html>
