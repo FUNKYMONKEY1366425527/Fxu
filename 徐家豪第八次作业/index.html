@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body><form name="myform"onclick="scr()">
+			姓名：
+			<input type="text" name="xingming" id="h1" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 性别： 男：
+			<input type="radio" name="sex" id="h2" value="男" /> 女：
+			<input type="radio" name="sex" id="h2" value="女" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</form>	<button onclick="add()">增加</button><br><br>
+		
+		
+<table border="1" width="100%" height="200px" cellspacing="0"id="table1">
+			<tr>
+				<td>编号</td>
+				<td>姓名</td>
+				<td>性别</td>
+				<td>操作</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td id="demo1">张三</td>
+				<td>女</td>
+				<td><a href='#'onclick="del1()">删除</a></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>李四</td>
+				<td>女</td>
+				<td><a href='#' onclick="del2()">删除</a></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>王五</td>
+				<td>男</td>
+				<td><a href='#' onclick="del3()">删除</a></td>
+			</tr>
+
+		</table>
+ <script>
+ 	function add(){ 
+ 		
+ 		table = document.getElementById("table1");
+     oneRow = table.insertRow();//插入一行
+     cell1= oneRow.insertCell();//单单插入一行是不管用的，需要插入单元格
+     cell2=oneRow.insertCell();
+     cell3=oneRow.insertCell();
+     cell4=oneRow.insertCell();
+     cell1.innerHTML = ""; 
+     cell2.innerHTML= "不会了"; 
+     cell3.innerHTML= "就写了这么多"; 
+     cell4.innerHTML= "<a href='#'>删除</a>";}
+     function del1(){
+	var table=document.getElementById("table1");
+	var len=table.rows.length;
+	alert("确定要删除吗？qaq");table.deleteRow(len-4);
+	
+} function del2(){
+	var table=document.getElementById("table1");
+	var len=table.rows.length;alert("确定要删除吗？qaq");
+	table.deleteRow(len-3);
+} function del3(){
+	var table=document.getElementById("table1");
+	var len=table.rows.length;alert("确定要删除吗？qaq");
+	table.deleteRow(len-2);
+}
+function scr(){
+	var x=document.myform.xingming.value;
+	var y=document.myform.sex.value;
+	           
+}
+
+x=document.getElementById("demo1")  
+x.style.color="blue";           
+x=document.getElementById("demo2")  
+x.style.color="red";           
+x=document.getElementById("demo3")  
+x.style.color="red";           
+x=document.getElementById("demo4")  
+x.style.color="red";           
+x=document.getElementById("demo5")  
+x.style.color="red";
+x=document.getElementById("demo6")
+x.style.color="red";           
+ </script>
+
+</html>
